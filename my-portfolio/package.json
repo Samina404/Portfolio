@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -32,9 +31,5 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.18",
     "vite": "^7.1.7"
-=======
-  "dependencies": {
-    "react-typed": "^2.0.12"
->>>>>>> 1a46efa3269b6ee22ad467a1356110cd3741195e
   }
 }
