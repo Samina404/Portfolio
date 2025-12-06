@@ -1,88 +1,98 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import { Github, Linkedin, FileText } from "lucide-react";
 
 export default function Home() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center px-10 bg-[#0f172a] overflow-hidden text-white">
+    <section className="relative min-h-screen flex flex-col justify-center items-center px-6 bg-slate-950 overflow-hidden text-white">
       
-      {/* Gradient Background Shapes */}
-      <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-green-400/20 rounded-full animate-pulse"></div>
-      <div className="absolute bottom-[-120px] right-[-100px] w-[500px] h-[500px] bg-blue-400/20 rounded-full animate-pulse"></div>
+      {/* Background Gradient Mesh */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+        <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-[100px]"></div>
+        <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px]"></div>
+      </div>
 
       {/* Hero Content */}
-      <motion.h2
-        className="text-5xl font-extrabold mb-2 z-10"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        Samina Rahman
-      </motion.h2>
+      <div className="z-10 text-center max-w-3xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          
+        </motion.div>
 
-      <motion.h3
-        className="text-3xl font-semibold mb-4 z-10"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.3, duration: 0.8 }}
-      >
-        I’m a{" "}
-        <span className="text-green-400">
+        <motion.h1
+          className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.8 }}
+        >
+          Hi, I'm <span className="text-gradient">Samina Rahman</span>
+        </motion.h1>
+
+        <motion.h2
+          className="text-2xl md:text-3xl font-medium text-slate-300 mb-8 h-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+        >
           <Typewriter
-            words={["Full Stack Developer", "MERN Developer", "Web Developer"]}
+            words={["Full Stack Developer", "MERN Stack Expert", "FRONTEND Developer"]}
             loop
             cursor
-            cursorStyle="|"
+            cursorStyle="_"
             typeSpeed={80}
             deleteSpeed={50}
-            delaySpeed={1500}
+            delaySpeed={2000}
           />
-        </span>
-      </motion.h3>
+        </motion.h2>
 
-      <motion.p
-        className="text-gray-400 max-w-2xl mb-8 leading-relaxed z-10"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.8 }}
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, cum eos.
-        Iure incidunt excepturi totam aperiam, deserunt quidem obcaecati
-        consectetur voluptatibus recusandae quasi sequi.
-      </motion.p>
+        <motion.p
+          className="text-slate-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          Aspiring Full Stack Developer with hands-on experience building and deploying responsive web applications using React, Node.js, Next.js, and MongoDB. Passionate about creating innovative software solutions.
+        </motion.p>
 
-      <motion.div
-        className="flex items-center space-x-6 z-10"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.9, duration: 0.8 }}
-      >
-        {/* Download CV Button */}
-        <button className="bg-green-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-green-400 transition">
-          Download CV
-        </button>
-
-        {/* GitHub & LinkedIn */}
-        <div className="flex space-x-4 text-green-400 text-2xl">
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-green-300 transition"
+        <motion.div
+          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8, duration: 0.8 }}
+        >
+          <a 
+            href="/resume.pdf" 
+            download="Samina_Rahman_Resume.pdf"
+            className="group flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg shadow-emerald-500/20"
           >
-            <i className="fa-brands fa-github"></i>
+            <FileText size={20} />
+            View CV
           </a>
 
-          <a
-            href="https://www.linkedin.com/in/yourusername/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-green-300 transition"
-          >
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-        </div>
-      </motion.div>
+          <div className="flex gap-4 sm:ml-4">
+            <a
+              href="https://github.com/Samina404/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-all border border-slate-700"
+            >
+              <Github size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/samina-rahman-5a25281b7/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-all border border-slate-700"
+            >
+              <Linkedin size={20} />
+            </a>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 }
