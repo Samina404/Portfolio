@@ -41,9 +41,7 @@ export default function Resume() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="text-4xl font-bold mb-16 text-center">
-          Resume 
-        </h2>
+  
 
         <div className="flex flex-col gap-16 max-w-4xl mx-auto mb-20">
           {/* Education */}

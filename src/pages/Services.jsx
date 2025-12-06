@@ -39,7 +39,7 @@ export default function Services() {
       >
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            My Services 
+            My Expertise
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto text-lg">
             I offer a comprehensive range of technical services to help bring your ideas to life.
