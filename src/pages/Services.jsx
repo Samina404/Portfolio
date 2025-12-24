@@ -25,7 +25,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="min-h-screen px-6 py-20 bg-slate-950 text-slate-200 flex flex-col justify-center relative overflow-hidden">
+    <section className="py-12 md:py-28 px-6 bg-slate-950 text-slate-200 flex flex-col justify-center relative overflow-hidden">
       {/* Background Gradients */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-[100px] -z-10" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[100px] -z-10" />
@@ -46,7 +46,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           {services.map((service, idx) => (
             <motion.div
               key={idx}

@@ -33,7 +33,7 @@ const skills = {
 
 export default function Resume() {
   return (
-    <section className="min-h-screen px-6 py-20 bg-slate-950 text-slate-200">
+    <section className="py-12 md:py-28 px-6 bg-slate-950 text-slate-200">
       <motion.div
         className="max-w-5xl mx-auto"
         initial={{ opacity: 0 }}
@@ -93,7 +93,7 @@ export default function Resume() {
             <h3 className="text-2xl font-semibold text-white">Technical Skills</h3>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {Object.entries(skills).map(([category, items], idx) => (
               <div key={idx} className="glass-card p-6 rounded-xl hover:border-emerald-500/30 transition-colors">
                 <h4 className="text-lg font-semibold mb-4 text-emerald-300">{category}</h4>

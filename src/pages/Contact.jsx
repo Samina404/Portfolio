@@ -18,7 +18,7 @@ export default function Contact() {
           I’m currently open to new opportunities. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
         </p>
 
-        <div className="glass-card p-8 rounded-2xl border border-slate-800 shadow-2xl">
+        <div className="glass-card p-6 md:p-8 rounded-2xl border border-slate-800 shadow-2xl">
           <div className="flex flex-col gap-6 items-center">
             
             <a href="mailto:saminarahman404@gmail.com" className="group flex items-center gap-4 p-4 w-full max-w-md rounded-xl bg-slate-900/50 hover:bg-emerald-500/10 border border-slate-800 hover:border-emerald-500/30 transition-all">

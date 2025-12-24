@@ -24,7 +24,7 @@
           </motion.div>
 
           <motion.h1
-            className="text-5xl md:text-7xl font-bold mb-6 tracking-tight"
+            className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 tracking-tight px-2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
@@ -33,7 +33,7 @@
           </motion.h1>
 
           <motion.h2
-            className="text-2xl md:text-3xl font-medium text-slate-300 mb-8 h-12"
+            className="text-xl sm:text-2xl md:text-3xl font-medium text-slate-300 mb-6 md:mb-8 h-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
@@ -50,7 +50,7 @@
           </motion.h2>
 
           <motion.p
-            className="text-slate-400 text-lg leading-relaxed mb-10 max-w-2xl mx-auto"
+            className="text-slate-400 text-base sm:text-lg leading-relaxed mb-8 md:mb-10 max-w-2xl mx-auto px-4 sm:px-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
@@ -59,20 +59,20 @@
           </motion.p>
 
           <motion.div
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.8 }}
           >
             <a 
-    href="/resume.pdf" 
-    target="_blank"
-    rel="noopener noreferrer"
-    className="group flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg shadow-emerald-500/20"
-  >
-    <FileText size={20} />
-    View CV
-  </a>
+              href="/resume.pdf" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold transition-all shadow-lg shadow-emerald-500/20 w-full sm:w-auto justify-center"
+            >
+              <FileText size={20} />
+              View CV
+            </a>
 
 
             <div className="flex gap-4 sm:ml-4">

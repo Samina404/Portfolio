@@ -48,7 +48,7 @@
 
   export default function Portfolio() {
     return (
-      <section className="min-h-screen px-6 py-20 bg-slate-950 text-slate-200">
+      <section className="py-12 md:py-28 px-6 bg-slate-950 text-slate-200">
         <motion.div
           className="max-w-6xl mx-auto"
           initial={{ opacity: 0 }}
